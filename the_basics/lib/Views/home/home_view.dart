@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_basics/widgets/centered_View/centered_view.dart';
 
 import 'package:the_basics/widgets/navigation_bar/navigation_bar.dart';
 
@@ -9,10 +10,12 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          NavigationBarCustom()
-        ],
+      body: CenteredView(
+        child: Column(
+          children: const [
+            NavigationBarCustom()
+          ],
+        ),
       ),
     );
   }
